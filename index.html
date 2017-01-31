@@ -1,10 +1,9 @@
 <!doctype html>
 <html> 
-    <!--/* hidden field with title, drop-down, number input, name-email-phone, text comment, check box, submit-->
 <head>
     <title>The Prickly Pear</title>
     <meta name="description" content="Cactus Delivery"/>
-    <meta charset="utf-8"> <!-- Is this right? -->
+    <meta charset="utf-8"> 
     <meta name="viewport" content="width=device-width, intitial-scale=1.0">
 
 </head>
@@ -28,45 +27,92 @@
         <section id="about">
             <div>
               <blockquote><strong><em>"I love my cactus collecetion from The Prickly Pear! They don't need water and it hurts when you touch them! Inspiring plants. Great gifts for busy friends!"</em></strong></br></br><em>- Betty Rock, Indianapolis, IN</em></blockquote>
+              <br/><br/>
             </div>
         </section>
 
-        <section id="order now">
+        <section id="cta">
             <div>
-                <h3>Order your very own Prickly Pear cactus now</h3>
+                <h3>send one to a friend </h3>
                 <h4><em>free shipping</em><h4>
+
+                <br/>
             </div>
-        
+    <form method="post" action="">    
         <section id="product">
             <div>
-                
+            <label><strong><em>Choose your plant:</em></strong></label><br/><br/>
+            
+            <input type="radio" id="echinopsis" name="options" value="echinopsos" />
+            <label for="echinopsos">Echinopsos</label>
+            <br/><br/>
+
+            <input type="radio" id="mammillaria" name="options" value="mammillaria" />
+            <label for="mammillaria">Mammillaria</label>
+            <br/><br/>
+
+            <input type="radio" id="barbary fig" name="options" value="barbary fig" />
+            <label for="barbary fig">Barbary Fig</label>
+            <br/><br/>
+
+            <input type="radio" id="schlumbergera" name="options" value="schlumbergera" />
+            <label for="schlumbergera">Schlumbergera</label>
+            <br/><br/><br/>
+
+        <section id="planter options">
+            <label for="planter"><strong><em>choose your planter color</em></strong></label><br/>
+            <br/>
+        <select id="planter" name="planter">
+            <option value="BLK">Black</option>
+            <option value="GRY">Grey</option>
+            <option value="WHT">White</option>
+        </select> <br/><br/><br/>
+
+        <section id="number of plants">
+            <label for="number"><strong><em>number of plants</em></strong></label><br/><br/>   
+            <input type="number" id="number" name="number"/><br/><br/>
+
+        <br/><hr/><br/>
         
         <section id="buyer info">
             <div>
-            <label for="first name">name</label><br/>   
-                <input type="text" id="first name" name="first name" placeholder="first"/><br/>
-                <input type="text" id="last name" name="last name" placeholder="last"/><br/>
+            <label for="first name"><strong><em>name</em></strong></label><br/><br/>   
+                <input type="text" id="first name" name="first name" placeholder="first"/><br/><br/>
+                <input type="text" id="last name" name="last name" placeholder="last"/><br/><br/>
+
+            <label for="address"><strong><em>address</em></strong></label><br/><br/>
+                <input type="text" id="street" name="street" placeholder="street"/><br/><br/> 
+                <input type="text" id="city" name="city" placeholder="city"/><br/><br/>
+                <input type="text" id="state" name="state" placeholder="state"/><br/><br/>
+                <input type="text" id="zipcode" name="zipcode" placeholder="zipcode"/><br/><br/>
+
+            <label for="contact"><strong><em>contact</em></strong></label><br/><br/>
+                <input type="email" id="email" name="email" placeholder="email"/><br/><br/>
+                <input type="tel" id="phone" name"phone" placeholder="phone"/><br/><br/><br/> 
+
+            <label for="news letter">
+                <input type="checkbox" checked> Please send me awesome newsletters!
+                </label><br/><br/>
                 
-                <br/><hr/><br/>
+             <button type="submit"><strong>Send</strong></button>
+                <br/><br/>
 
-            <label for="address">address</label><br/>
-                <input type="text" id="street" name="street" placeholder="street"/><br/> 
-                <input type="text" id="city" name="city" placeholder="city"/><br/>
-                <input type="text" id="state" name="state" placeholder="state"/><br/>
-                <input type="text" id="zipcode" name="zipcode" placeholder="zipcode"/><br/>
-
-                 <br/><hr/><br/>
-
-            <label for="contact">contact</label><br/>
-                <input type="text" id="email" name="email" placeholder="email"/><br/>
-                <input type="text" id="phone" name"phone" placeholder="phone"/><br/> 
             </div>
         </section>
+        <input type="hidden" name="product" value="pants" />
+    </form>
     </main>
-
+   <br/><br/><hr/><br/><br/>
     <footer>
         <div>
-        
+            <section id="more info">
+            <h3>Please let us know what you think of our plants. We love feedback!<h3>
+                <label for="comment"><strong><em>comments</em></strong></label><br/><br/>
+                <textarea name="comment"></textarea><br/>
+            
+             <button type="submit"><strong>Send</strong></button>
+            
+                <br/><br/><br/>
         </div>
 
     </footer>
