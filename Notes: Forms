@@ -1,0 +1,19 @@
+<textarea name="comment">   /* text area can have a name!
+    Lorem ipsum 
+</textarea>
+/* if you add any space within a text area in HTML, it will show up in the browser 
+
+
+<label for="state">State</label><br/>
+<select id="state" name="state">
+    <option value="CA">Canada</option>
+    <option value="MX">Mexico</option>
+    <option value="US">United States</option>
+</select>
+
+/*button
+<button type=submit
+/**
+<form method="post" action="http://thinksaydo.com/submit
+
+
