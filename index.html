@@ -10,40 +10,31 @@
 
 <body>
     <header>
-        <div>
             <img width="1200" src="img/Header_IMG_Cactus.jpg"/>
             <h1>The Prickly Pear</h1>
             <h2><em>the plant your cat <strong>won't</strong> eat</em></h2>
-        </div>
     </header>
 
     <main>
         <section id="Product Images">
-            <div>
               <img width="200" src="http://unsplash.it/200?random" hspace="30"/> <img width="200" src="http://unsplash.it/200?random" hspace="30"/> <img width="200" src="http://unsplash.it/200?random" hspace="30"/> <img width="200" src="http://unsplash.it/200?random" hspace="30"/>  
-            </div>
         </section>
 
         <section id="about">
-            <div>
               <blockquote><strong><em>"I love my cactus collecetion from The Prickly Pear! They don't need water and it hurts when you touch them! Inspiring plants. Great gifts for busy friends!"</em></strong></br></br><em>- Betty Rock, Indianapolis, IN</em></blockquote>
               <br/><br/>
-            </div>
         </section>
 
         <section id="cta">
-            <div>
                 <h3>send one to a friend </h3>
                 <h4><em>free shipping</em><h4>
-
                 <br/>
-            </div>
-
+        </section>
+        
     <form method="post" action="">    
         <section id="product">
-            <div>
-            <label><strong><em>Choose your plant:</em></strong></label><br/><br/>
-            
+            <label><strong><em>Choose your plant:</em></strong></label>
+            <br/><br/>
             <input type="radio" id="echinopsis" name="options" value="echinopsos" />
             <label for="echinopsos">Echinopsos</label>
             <br/><br/>
@@ -57,58 +48,66 @@
             <br/><br/>
 
             <input type="radio" id="schlumbergera" name="options" value="schlumbergera" />
-            <label for="schlumbergera">Schlumbergera</label> <br/><br/><br/>
-            </div>
+            <label for="schlumbergera">Schlumbergera</label> 
+            <br/><br/><br/>
+        </section>
 
         <section id="planter options">
-            <div>
-            <label for="planter"><strong><em>choose your planter color</em></strong></label><br/>
-            <br/>
+            <label for="planter"><strong><em>choose your planter color</em></strong></label>
+            <br/><br/>
+        </section> 
         <select id="planter" name="planter">
             <option value="BLK">Black</option>
             <option value="GRY">Grey</option>
-            <option value="WHT">White</option><br/><br/><br/>
-            </div>
+            <option value="WHT">White</option><br/>   
         </select> 
 
+            <br/><br/><br/>
+            
         <section id="number of plants">
-            <div>
-            <label for="number"><strong><em>number of plants</em></strong></label><br/><br/>   
+            <label for="number"><strong><em>number of plants</em></strong></label>
+            <br/><br/>   
             <input type="number" id="number" name="number"/><br/><br/>
             <br/><hr/><br/>
-            </div>
+        </section>
         
         <section id="buyer info">
-            <div>
-            <label for="first name"><strong><em>name</em></strong></label><br/><br/>   
-                <input type="text" id="first name" name="first name" placeholder="first"/><br/><br/>
-                <input type="text" id="last name" name="last name" placeholder="last"/><br/><br/>
+            <label for="first name"><strong><em>name</em></strong></label>
+            <br/><br/>   
+            <input type="text" id="first name" name="first name" placeholder="first"/>
+            <br/><br/>
+            <input type="text" id="last name" name="last name" placeholder="last"/>
+            <br/><br/>
+
+            <label for="contact"><strong><em>contact</em></strong></label><br/><br/>
+            <input type="email" id="email" name="email" placeholder="email"/><br/><br/>
+            <input type="tel" id="phone" name"phone" placeholder="phone"/><br/><br/><br/> 
 
             <label for="address"><strong><em>address</em></strong></label><br/><br/>
                 <input type="text" id="street" name="street" placeholder="street"/><br/><br/> 
                 <input type="text" id="city" name="city" placeholder="city"/><br/><br/>
-                <input type="text" id="state" name="state" placeholder="state"/><br/><br/>
-                <input type="text" id="zipcode" name="zipcode" placeholder="zipcode"/><br/><br/>
+                <!--<input type="text" id="state" name="state" placeholder="state"/><br/><br/>--> 
+                <label for="state">state</label>
+                    <select>
+                        <option>Indiana</option>
+                        <option>Tennessee</option>
+                        <option>New York</option>
+                        <option>Ohio</option>
+                        <option>Texas</option>
+                    </select><br/><br/>
+                <input type="text" id="zipcode" name="zipcode" placeholder="zipcode"/><br/><br/><br/>
 
-            <label for="contact"><strong><em>contact</em></strong></label><br/><br/>
-                <input type="email" id="email" name="email" placeholder="email"/><br/><br/>
-                <input type="tel" id="phone" name"phone" placeholder="phone"/><br/><br/><br/> 
+                <label for="comment"><strong><em>specific shipping instructions</em></strong></label><br/><br/>
+                    <textarea name="comment"></textarea><br/><br/>
 
             <label for="news letter">
                 <input type="checkbox" checked> Please send me awesome newsletters!
                 </label><br/><br/>
-                
-             <button type="submit"><strong>Send</strong></button>
-                <br/><br/>
-                
-            <h3>Please let us know what you think of our plants. We love feedback!<h3>
-                <label for="comment"><strong><em>comments</em></strong></label><br/><br/>
-                <textarea name="comment"></textarea><br/>
             
              <button type="submit"><strong>Send</strong></button>
         
                 <br/><br/><br/>
-            </div>
+          
         </section>
         <input type="hidden" name="product" value="pants" />
     </form>
