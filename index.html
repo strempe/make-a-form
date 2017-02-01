@@ -31,7 +31,9 @@
                 <br/>
         </section>
         
-    <form method="post" action="">    
+    <form action="https://formspree.io/88.trempe.sara@gmail.com" method="post">    
+        <input type="hidden" name="product" value="pants" />
+
         <section id="product">
             <label><strong><em>Choose your plant:</em></strong></label>
             <br/><br/>
@@ -52,15 +54,15 @@
             <br/><br/><br/>
         </section>
 
-        <section id="planter options">
+        <section id="planter">
             <label for="planter"><strong><em>choose your planter color</em></strong></label>
             <br/><br/>
-        </section> 
-        <select id="planter" name="planter">
+            <select id="planter" name="planter">
             <option value="BLK">Black</option>
             <option value="GRY">Grey</option>
             <option value="WHT">White</option><br/>   
-        </select> 
+            </select> 
+        </section>
 
             <br/><br/><br/>
             
@@ -88,7 +90,7 @@
                 <input type="text" id="city" name="city" placeholder="city"/><br/><br/>
                 <!--<input type="text" id="state" name="state" placeholder="state"/><br/><br/>--> 
                 <label for="state">state</label>
-                    <select>
+                    <select id="state" name="planter">
                         <option>Indiana</option>
                         <option>Tennessee</option>
                         <option>New York</option>
@@ -107,9 +109,7 @@
              <button type="submit"><strong>Send</strong></button>
         
                 <br/><br/><br/>
-          
         </section>
-        <input type="hidden" name="product" value="pants" />
     </form>
     </main>
 </html>
